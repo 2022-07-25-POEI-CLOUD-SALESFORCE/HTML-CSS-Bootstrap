@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="description de ma page">
+        <title>Titre onglet</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css"><!--Intégration du fichier css-->
+    </head>
+    <!-- Commentaire -->
+    <body>
+        <!--Header-->
+        <div></div>
+
+        <h1>Titre de ma page</h1>
+
+        <h2>Notre équipe</h2>
+        <h3>Fanny</h3>
+        <h3>Bob</h3>
+        ...
+        <h6></h6>
+
+
+        <h2>Nous contacter</h2>
+
+        <!-- lorem -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, necessitatibus fugit, non excepturi, est nisi velit unde veniam sit nesciunt nulla iusto suscipit dolores? Cum iste similique veritatis iure sunt.</p>
+
+        <!-- lorem*5 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam deleniti animi minus earum, nemo nulla fuga nostrum. Quam corporis illo optio. Excepturi id accusantium dolor optio vel, alias delectus.
+        Minus animi similique atque nobis nemo quaerat optio ut accusamus. Facilis commodi sapiente eveniet adipisci debitis totam iure fugiat nihil! Rem pariatur rerum tempore aliquid quibusdam placeat voluptatum mollitia reprehenderit!
+        Iure quibusdam dicta saepe eos voluptatum earum, maiores dolore excepturi cupiditate laudantium quisquam eius dolorum sint. Quasi commodi mollitia ex nesciunt adipisci, quidem laudantium? Explicabo est praesentium fugiat et iste! <br>
+        Natus consequuntur sunt nam assumenda distinctio quo delectus nostrum rerum ipsam omnis blanditiis incidunt officia vitae hic sapiente, asperiores porro laboriosam enim quasi. Amet unde nemo aliquam laudantium tempora ullam.
+        Magnam repudiandae mollitia itaque ad? Minima odit optio quos, harum animi ipsam totam, eveniet, suscipit asperiores aspernatur dolores ut nulla esse. Reprehenderit distinctio commodi consectetur laudantium harum earum eos excepturi?</p>
+
+        <!-- lorem5 -->
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <p>Liste non ordonnée</p>
+        <!--Liste-->
+        <ul>
+            <li>Farine</li>
+            <li>Oeuf</li>
+            <li>Lait</li>
+            <li>Chocolat</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur qui optio aliquam cupiditate beatae explicabo vitae deserunt perspiciatis voluptates voluptatem? Quia facere nesciunt voluptatibus repudiandae alias iure. Quia, eius possimus.</p>
+
+
+
+        <p>Liste ordonnée</p>
+        <!--Liste-->
+        <ol>
+            <li>Introduction</li>
+            <li>Préparer l'environnement</li>
+            <li>Introduction html</li>
+            <li>Les bases du html</li>
+            <li>Les balises</li>
+        </ol>
+
+        <!--Image-->
+        <img src="images/chat.jpg" alt="Image de chat" title="Image de chat qui amène au site wikipedia de la page chat">
+
+        <!--Liens-->
+        <a href="https://fr.wikipedia.org/wiki/Chat"><img src="images/chat.jpg" alt="Image de chat" title="Image de chat qui amène au site wikipedia de la page chat"></a>
+
+        <a href="https://fr.wikipedia.org/wiki/Chat">Lien vers le wiki du chat</a>
+        <a href="contact.html">Page contact</a>
+
+        <!--Balise sémantique de texte-->
+        <em>Accentuation du texte</em>
+        <strong>Texte important</strong>
+        <mark>Texte pertinent dans son contexte</mark>
+
+        <!--Tableau HTML-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Ville</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right">Alice</td>
+                    <td width="50%">Lille</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Paris</td>
+                    <td>57</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lyon</td>
+                    <td>12</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!--Formulaire-->
+        <form action="cible.php" method="GET">
+            <div>
+                <label for="name">Prénom</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div>
+                <label class="text_red" for="firstname">Nom</label>
+                <input placeholder="ex : Blinc" id="firstname" name="firstname" type="text">
+            </div>
+            <div>
+                <label for="color">Quel couleur voulez vous ?</label>
+                <select class="text_red" name="color" id="color">
+                    <option value="red">Rouge</option>
+                    <option value="green">Vert</option>
+                    <option value="blue">Bleu</option>
+                    <option value="purple">Violet</option>
+                    <option value="none">Aucune</option>
+                </select>
+            </div>
+            <div class="text_red">
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input id="style_button" type="submit" value="Souscrire">
+            </div>
+        </form>
+        <div class="box_01">
+            <div></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+.text_red{
+    color: bisque;
+}
+
+p{
+    color: #fff;
+    background-color: black;
+}
+
+.class_p{
+    color:green;
+}
+
+#style_button{
+    border: solid 2pc black;
+}
+
+input[type="submit"]{
+    background-color: #5f9ea0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    margin-top: 10px;
+    margin: 10px;
+    border: 2px solid #5f9ea0;
+    border-radius: 10px;
+    text-decoration: overline;
+}
+
+div.text_red{
+    box-shadow: 5px 5px 15px 6px rgba(78,78,78,0.6);
+}
+
+.box_01{
+    height: 200px;
+    width: 200px;
+    background-color: #5f9ea0;
+    position: relative;
+    left: 100px;
+    top:20px;
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: #5f9ea0;
+    }
+}

@@ -1,0 +1,31 @@
+body{
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.rowgrid-1>div{
+    padding:3rem;
+}
+
+/*Les lignes*/
+
+.rowgrid-1{
+    border: 2px solid black;
+}
+
+/*Les colonnes*/
+
+.colorgrid-1{
+    background-color: rgb(143, 17, 17);
+    color: white;
+
+}
+.colorgrid-2{
+    background-color: rgb(63, 63, 185);
+    color: white;
+
+}
+.colorgrid-3{
+    background-color: green;
+
+}
