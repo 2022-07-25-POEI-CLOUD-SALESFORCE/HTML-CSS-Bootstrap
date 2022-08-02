@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mon site avec Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"><!--Lien vers le css de bootstrap, à placer avant son propre fichier css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+        <!--Header(le 4eme) prît sur : https://getbootstrap.com/docs/5.2/examples/headers/-->
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class=" d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <i class="fs-2 bi bi-bootstrap text-purple"></i><!--Icône prise en rajoutant le lien CDN de Bootstrap Icons -->
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-purple">Accueil</a></li>
+                        <li><a href="#gallery" class="nav-link px-2 text-white">Galerie</a></li>
+                        <li><a href="#team" class="nav-link px-2 text-white">Notre équipe</a></li>
+                        <li><a href="#service" class="nav-link px-2 text-white">Nos services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!--Exemple de contenu avec image prît sur : https://getbootstrap.com/docs/5.2/examples/ dans la partie custom components le 1er-->
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Slogan entreprise</h1>
+                        <p class="lead text-muted">Présentation brève de l'entreprise avec phrase d'accroche</p>
+                        <p>
+                            <a href="#contact" class="btn btn-purple my-2">Nous contacter</a>
+                            <a href="#service" class="btn btn-secondary my-2">Nos services</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="album py-5 bg-light" id="gallery">
+                <div class="container">
+                    <!--Rajouté par moi-->
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-purple text-center p-5">Galerie</h2>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/img-example.jpg" alt=""><!--Image fictive rajouté-->
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis doloribus error adipisci sapiente laborum expedita eum corporis non velit obcaecati tempore minima, consectetur omnis id! Tenetur dolorum itaque natus!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary b btn-purple"><a target="_blank" href="#" class="text-white">Voir plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/img-example.jpg" alt=""><!--Image fictive rajouté-->
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis doloribus error adipisci sapiente laborum expedita eum corporis non velit obcaecati tempore minima, consectetur omnis id! Tenetur dolorum itaque natus!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary b btn-purple"><a target="_blank" href="#" class="text-white">Voir plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/img-example.jpg" alt=""><!--Image fictive rajouté-->
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis doloribus error adipisci sapiente laborum expedita eum corporis non velit obcaecati tempore minima, consectetur omnis id! Tenetur dolorum itaque natus!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary b btn-purple"><a target="_blank" href="#" class="text-white">Voir plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/img-example.jpg" alt=""><!--Image fictive rajouté-->
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis doloribus error adipisci sapiente laborum expedita eum corporis non velit obcaecati tempore minima, consectetur omnis id! Tenetur dolorum itaque natus!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary b btn-purple"><a target="_blank" href="#" class="text-white">Voir plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/img-example.jpg" alt=""><!--Image fictive rajouté-->
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis doloribus error adipisci sapiente laborum expedita eum corporis non velit obcaecati tempore minima, consectetur omnis id! Tenetur dolorum itaque natus!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary b btn-purple"><a target="_blank" href="#" class="text-white">Voir plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="images/img-example.jpg" alt=""><!--Image fictive rajouté-->
+                                <div class="card-body">
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis doloribus error adipisci sapiente laborum expedita eum corporis non velit obcaecati tempore minima, consectetur omnis id! Tenetur dolorum itaque natus!</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary b btn-purple"><a target="_blank" href="#" class="text-white">Voir plus</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            
+            <section class="container p-5" id="team"><!--Ancre faite-->
+                <!--Rajouté par moi-->
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-purple text-center p-5">Notre équipe</h2>
+                    </div>
+                </div>
+                <!--Exemple reprît et modifié dans Examples -> Custom components -> Carousel (https://getbootstrap.com/docs/5.2/examples/carousel/)-->
+                <div class="row text-center mt-4">
+                    <div class="col-lg-4">
+                        <!--svg remplacé par le img-->
+                      <img src="images/resp.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"/>
+                      <h2 class="fw-normal">Chargée de projet</h2>
+                      <p>Ma mission : Permettre une bonne transmission de vos besoins à notre équipe et ainsi permettre un produit sur mesure qui réponds à vos exigences.</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="images/dev-front.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"/> 
+                        <h2 class="fw-normal">Développeur Front-end</h2>
+                        <p>Ma mission : Vous faire rêver sur un produit aussi beau que pratique et simple d'utilisation.</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="images/dev-back.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"/> 
+              
+                      <h2 class="fw-normal">Développeuse Back-end</h2>
+                      <p>Ma mission : Vous apporter toute la sécurité et les fonctionnalités dont a besoin votre site pour évoluer</p>
+                    </div><!-- /.col-lg-4 -->
+                </div>
+            </section>
+            <section id="service" class="bg-light p-5">
+                <!--Rajouté par moi-->
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-purple text-center p-5">Nos services</h2>
+                    </div>
+                </div>
+                <!--Exemple reprît et modifié dans Examples -> Custom components -> Pricing (https://getbootstrap.com/docs/5.2/examples/pricing/)-->
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Petit site vitrine avec CMS</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">1500€<small class="text-muted fw-light">/TTC</small></h1>
+                                <ul class="list-unstyled text-start mt-3 mb-4">
+                                    <li>- 1 Tuto sur la prise en main du CMS</li>
+                                    <li>- 2 propositions de maquette</li>
+                                    <li>- Site responsive (accessible mobile, tablette et écran pc)</li>
+                                    <li>- Référencement optimisé</li>
+                                    <li>- Nom de domaine et hébergement à la charge du client</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-secondary btn-purple">Choisir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Site avec fonctionnalités, un thème sur mesure fait avec un CMS</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">2500€<small class="text-muted fw-light">/TTC</small></h1>
+                                <ul class="list-unstyled text-start mt-3 mb-4">
+                                    <li>- 1 Tuto sur la prise en main du CMS</li>
+                                    <li>- 3 propositions de maquette</li>
+                                    <li>- Site responsive (accessible mobile, tablette et écran pc)</li>
+                                    <li>- Référencement optimisé</li>
+                                    <li>- Nom de domaine et hébergement à la charge du client</li>
+                                    <li>- Thème sur mesure</li>
+                                    <li>- fonctionnalités (formulaires, animations etc.)</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-secondary btn-purple">Choisir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Site fait main sur mesure</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">3000-5000€<small class="text-muted fw-light">/TTC</small></h1>
+                                <ul class="list-unstyled text-start mt-3 mb-4">
+                                    <li>- 1 Tuto sur la prise en main du site</li>
+                                    <li>- 3 propositions de maquette</li>
+                                    <li>- Site responsive (accessible mobile, tablette et écran pc)</li>
+                                    <li>- Référencement optimisé</li>
+                                    <li>- Nom de domaine, hébergement et maintenance prît en charge sous conditions d'abonnement</li>
+                                    <li>- Site entièrement sur mesure</li>
+                                    <li>- fonctionnalités sur mesure</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-secondary btn-purple">Choisir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer(le 2eme) prît dans https://getbootstrap.com/docs/5.2/examples/footers/-->
+        <footer class="p-4 text-bg-dark d-flex flex-wrap justify-content-between align-items-center border-top">
+            <div class="col-md-4 d-flex align-items-center my-3">
+                <a href="/" class="me-2 text-muted text-decoration-none lh-1">
+                    <i class="fs-2 bi bi-bootstrap text-purple"></i><!--Icône prise en rajoutant le lien CDN de Bootstrap Icons -->
+                </a>
+                <span class="text-muted">© 2022 Company, Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fs-2 text-info bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fs-2 text-purple bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fs-2 text-primary bi bi-facebook"></i></a></li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script><!--Lien vers le fichier popper et js de bootstrap à placer avant la fermeture du body-->
+    </body>
+</html>

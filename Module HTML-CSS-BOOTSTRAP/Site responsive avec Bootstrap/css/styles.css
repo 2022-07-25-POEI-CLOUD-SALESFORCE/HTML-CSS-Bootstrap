@@ -1,0 +1,13 @@
+
+/*Utilisation couleur personalisé*/
+.text-purple{
+    color: #8440c4;
+}
+a.text-purple:hover{
+    color: #fff;
+}
+.btn-purple{
+    color: #fff;
+    background-color: #8440c4;
+    border-color: #8440c4;
+}
